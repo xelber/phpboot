@@ -17,7 +17,7 @@
 
     "autoload": {
         "psr-4": {
-            "Phpboot": "src/"
+            "Phpboot\\": "src/"
         }
     }
 }
