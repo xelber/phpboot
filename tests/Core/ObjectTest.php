@@ -14,5 +14,15 @@ class ObjectTest extends TestCase
 
 	    $object->setEmptyParam();
 	    $this->assertEquals(null, $object->getEmptyParam());
+
+	    $object->setCammelCaseParam('Value');
+	    $this->assertEquals('Value', $object->getCammelCaseParam());
+    }
+
+    public function testExceptions()
+    {
+	    $object = new Object();
+	    $this->expectException(\Exception::class);
+	    $object->methodDoesNotExisit();
     }
 }
