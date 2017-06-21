@@ -1,0 +1,23 @@
+{
+    "name": "xelber/phpboot",
+    "description": "Set of reusable classes for PHP, useful for everyday use",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Hiran Milinda",
+            "email": "hiranmilinda@gmail.com"
+        }
+    ],
+    "require": {
+      "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.1"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Phpboot": "src/"
+        }
+    }
+}
